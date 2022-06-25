@@ -11,7 +11,4 @@ public interface ProjektRepository extends JpaRepository<Projekt, Integer> {
     Page<Projekt> findByNazwaContainingIgnoreCase(String nazwa, Pageable pageable);
 
     List<Projekt> findByNazwaContainingIgnoreCase(String nazwa);
-
-    // Metoda findByNazwaContainingIgnoreCase definiuje zapytanie
-    // SELECT p FROM Projekt p WHERE upper(p.nazwa) LIKE upper(%:nazwa%)
 }
