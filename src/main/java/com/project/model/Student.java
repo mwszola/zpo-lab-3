@@ -48,7 +48,6 @@ public class Student {
     @Column(length = 50)
     private String email;
 
-    @NotBlank(message = "Pole stacjonarny nie może być puste!")
     @Column(nullable = false)
     private Boolean stacjonarny;
 
